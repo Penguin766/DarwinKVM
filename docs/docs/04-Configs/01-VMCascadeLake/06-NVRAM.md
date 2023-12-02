@@ -34,6 +34,10 @@ We can use this dictionary to modify boot-args. Use the chart below for various 
 | ----- | ----- |
 | agdpmod=pikera | Used for disabling board ID checks on some Navi GPUs (RX 5000 & 6000 series). Don't use if you use NootRX. |
 
+## prev-lang:kbd
+
+This value sets the default language of the macOS installer, in the Sample.plist config by Acidanthera the default language is set to Russian. To bring up the language picker when booting the installer for the first time, delete the prev-lang:kbd value.
+
 ## Delete
 
 Forcibly rewrites NVRAM variables, do note that Add will not overwrite values already present in NVRAM so values like boot-args should be left alone.
